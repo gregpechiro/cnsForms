@@ -5,12 +5,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <style type="text/css">
             @media print {
-                input,
-                textarea {
-                    border: none !important;
-                    box-shadow: none !important;
-                    outline: none !important;
-                }
+            input,
+            textarea {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+            }
             }
             input {
             font-size: 10px;
@@ -132,6 +132,7 @@
             font-family: Times;
             color: #231f20;
             }
+
 </style>
     </head>
     <body bgcolor="#A0A0A0" vlink="blue" link="blue">
@@ -287,8 +288,8 @@
             <!-- <p style="position:absolute;top:927px;left:282px;white-space:nowrap" class="ft010"><b>Yes&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;No</b></p> -->
             <p style="position:absolute;top:971px;left:64px;white-space:nowrap" class="ft00">I/We&#160;hereby&#160;certify&#160;under&#160;penalty&#160;of&#160;law&#160;that&#160;ALL&#160;information&#160;is&#160;TRUE&#160;and&#160;CORRECT&#160;and&#160;that&#160;I/we&#160;understand&#160;that&#160;any&#160;misstatement&#160;of&#160;fact&#160;is&#160;a</p>
             <p style="position:absolute;top:984px;left:64px;white-space:nowrap" class="ft00">misdemeanor&#160;of&#160;the&#160;third&#160;degree&#160;punishable&#160;by&#160;a&#160;fine&#160;up&#160;to&#160;$2,500&#160;and/or&#160;imprisonment&#160;up&#160;to&#160;one&#160;year&#160;(18&#160;Pa.C.S.&#160;Section&#160;4904[b]).</p>
-            <p style="position:absolute;top:212px;left:155px;white-space:nowrap" class="ft013"><input type="text" style="width:160px" name="title-number" value="{{  .vehicle.Title }}"></p>
-            <p style="position:absolute;top:211px;left:322px;white-space:nowrap" class="ft013"><input type="text" style="width:143px" name="registration-plate-number" value=""></p>
+            <p style="position:absolute;top:212px;left:155px;white-space:nowrap" class="ft013"><input type="text" style="width:160px" name="title-number" value="{{  $vehicle.Title }}"></p>
+            <p style="position:absolute;top:211px;left:322px;white-space:nowrap" class="ft013"><input type="text" style="width:143px" name="registration-plate-number" value="{{ $vehicle.PlateNum }}"></p>
             <p style="position:absolute;top:211px;left:650px;white-space:nowrap" class="ft013"><input type="text" style="width:143px" name="financial-instiitution-number" value=""></p>
             <p style="position:absolute;top:420px;left:59px;white-space:nowrap" class="ft013"><input type="text" style="width:250px" name="vehicle-owner-last-name" value="{{ .company.Name }}"></p>
             <p style="position:absolute;top:455px;left:59px;white-space:nowrap" class="ft013"><input type="text" style="width:250px" name="vehicle-co-owner-last-name" value=""></p>
@@ -302,7 +303,7 @@
             <p style="position:absolute;top:490px;left:755px;white-space:nowrap" class="ft013"><input type="text" style="width:125px" name="vehicle-owner-zip" value="{{ .company.PhysicalAddress.Zip }}"></p>
             <p style="position:absolute;top:532px;left:800px;white-space:nowrap" class="ft013"><input type="text" style="width:35px" name="vehicle-owner-county-code-1" value=""></p>
             <p style="position:absolute;top:532px;left:850px;white-space:nowrap" class="ft013"><input type="text" style="width:30px" name="vehicle-owner-county-code-2" value=""></p>
-            <p style="position:absolute;top:694px;left:125px;white-space:nowrap" class="ft013"><input type="text" style="width:330px" name="correct-vin" value="{{ .vehicle.VIN }}"></p>
+            <p style="position:absolute;top:694px;left:125px;white-space:nowrap" class="ft013"><input type="text" style="width:330px" name="correct-vin" value="{{ $vehicle.VIN }}"></p>
             <p style="position:absolute;top:728px;left:59px;white-space:nowrap" class="ft013"><input type="text" style="width:280px" name="notary-or-mechanic-signature" value=""></p>
             <p style="position:absolute;top:728px;left:350px;white-space:nowrap" class="ft013"><input type="text" style="width:105px" name="mechanic-number" value=""></p>
             <p style="position:absolute;top:694px;left:550px;white-space:nowrap" class="ft013"><input type="text" style="width:165px" name="police-officer-signature" value=""></p>
@@ -311,7 +312,7 @@
             <p style="position:absolute;top:694px;left:775px;white-space:nowrap" class="ft013"><input type="text" style="width:105px" name="police-officer-badge-number" value=""></p>
             <p style="position:absolute;top:861px;left:557px;white-space:nowrap" class="ft013"><input type="text" style="width:155px" name="gvwr-verification" value="{{ .vehicle.GVW }}"></p>
             <p style="position:absolute;top:861px;left:757px;white-space:nowrap" class="ft013"><input type="text" style="width:125px" name="gcwr-verification" value="{{ .vehicle.GCR }}"></p>
-            <p style="position:absolute;top:583px;left:470px;white-space:nowrap" class="ft013"><input type="text" style="width:413px" name="original-vin" value="{{ .vehicle.VIN }}"></p>
+            <p style="position:absolute;top:583px;left:470px;white-space:nowrap" class="ft013"><input type="text" style="width:413px" name="original-vin" value="{{ $vehicle.VIN }}"></p>
         </div>
         <br>
         <div id="page2-div" style="background-color:#ffffff;position:relative;width:918px;height:1188px;margin:0 auto;">

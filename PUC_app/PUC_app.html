@@ -395,6 +395,7 @@
             font-family: Times;
             color: #000000;
             }
+
 </style>
     </head>
     <body bgcolor="#A0A0A0" vlink="blue" link="blue">
@@ -567,15 +568,15 @@
                 cannot be readily determined. &#160;<i>EXAMPLE:&#160;&#160;John&#160;Doe is the applicant and wants to&#160;<br />use the name&#160;</i>“Johnboy Trucking”<i>&#160;as his trade name. &#160;People cannot readily determine&#160;that&#160;<br />John Doe is the actual operator; therefore, the name is fictitious and must&#160;be&#160;registered&#160;as&#160;<br />such. &#160;Trade names such as&#160;</i>“John
                 Doe Trucking”&#160;<i>or&#160;&#160;</i>“J. Doe Trucking”&#160;<i>are not&#160;considered&#160;<br />fictitious and would not have to be registered.&#160;<br /></i>&#160;</p>
             <p style="position:absolute;top:845px;left:97px;white-space:nowrap" class="p3ft012">&#160;<br />3.&#160;</p>
-            <p style="position:absolute;top:868px;left:151px;white-space:nowrap" class="p3ft07"><b>Do you currently&#160;hold PA PUC Authority?</b>&#160; &#160;<input type="checkbox" name="name" value="">NO &#160;<b>Previous Authority?</b>&#160;<input type="checkbox" name="name" value="">NO&#160;</p>
+            <p style="position:absolute;top:868px;left:151px;white-space:nowrap" class="p3ft07"><b>Do you currently&#160;hold PA PUC Authority?</b>&#160; &#160;<input type="checkbox" name="current-puc-authority" value="">NO &#160;<b>Previous Authority?</b>&#160;<input type="checkbox" name="previous-puc-authority" value="">NO&#160;</p>
             <p style="position:absolute;top:889px;left:97px;white-space:nowrap" class="p3ft012">&#160;<br />&#160;</p>
-            <p style="position:absolute;top:910px;left:151px;white-space:nowrap" class="p3ft07"><b>If yes, at PUC No. A</b>- <input type="text" name="name" value="">&#160;&#160;</p>
+            <p style="position:absolute;top:910px;left:151px;white-space:nowrap" class="p3ft07"><b>If yes, at PUC No. A</b>- <input type="text" name="puc-number" value="">&#160;&#160;</p>
             <p style="position:absolute;top:929px;left:97px;white-space:nowrap" class="p3ft012">&#160;<br />4.&#160;</p>
             <p style="position:absolute;top:952px;left:151px;white-space:nowrap" class="p3ft07"><b>Are you a business entity&#160;registered with the PA Department of State?</b>&#160;<input type="checkbox" name="name" value="">NO&#160;</p>
             <p style="position:absolute;top:970px;left:97px;white-space:nowrap" class="p3ft06">&#160;</p>
             <p style="position:absolute;top:972px;left:151px;white-space:nowrap" class="p3ft01">If No, you must&#160;first register (see checklist)&#160;</p>
             <p style="position:absolute;top:990px;left:97px;white-space:nowrap" class="p3ft012">&#160;<br />&#160;</p>
-            <p style="position:absolute;top:1011px;left:151px;white-space:nowrap" class="p3ft07"><b>If Yes, provide your PA Corporation Bureau Entity&#160;ID Number</b>&#160;<input type="text" name="name" value=""></p>
+            <p style="position:absolute;top:1011px;left:151px;white-space:nowrap" class="p3ft07"><b>If Yes, provide your PA Corporation Bureau Entity&#160;ID Number</b>&#160;<input type="text" name="ein" value=""></p>
             <p style="position:absolute;top:1029px;left:97px;white-space:nowrap" class="p3ft06">&#160;</p>
             <p style="position:absolute;top:1031px;left:151px;white-space:nowrap" class="p3ft01">(see checklist and indicate type of business entity registered)&#160;</p>
             <p style="position:absolute;top:1048px;left:97px;white-space:nowrap" class="p3ft01">&#160;</p>
@@ -649,15 +650,15 @@
             <p style="position:absolute;top:799px;left:151px;white-space:nowrap" class="p4ft03"><b>Do you hold interstate operating authority?</b>&#160;&#160;&#160;</p>
             <p style="position:absolute;top:819px;left:97px;white-space:nowrap" class="p4ft00">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;</p>
             <p style="position:absolute;top:833px;left:159px;white-space:nowrap" class="p4ft01">&#160;</p>
-            <p style="position:absolute;top:832px;left:145px;white-space:nowrap" class="p4ft02"><input type="radio" name="name" value="">&#160;&#160;&#160;&#160;&#160;&#160;No&#160;</p>
+            <p style="position:absolute;top:832px;left:145px;white-space:nowrap" class="p4ft02"><input type="radio" name="opperation-authority" value="">&#160;&#160;&#160;&#160;&#160;&#160;No&#160;</p>
             <p style="position:absolute;top:834px;left:281px;white-space:nowrap" class="p4ft02">&#160;</p>
             <p style="position:absolute;top:834px;left:315px;white-space:nowrap" class="p4ft02">&#160;</p>
-            <p style="position:absolute;top:832px;left:300px;white-space:nowrap" class="p4ft02"><input type="radio" name="name" value="">&#160;&#160;&#160;&#160;&#160;&#160;
+            <p style="position:absolute;top:832px;left:300px;white-space:nowrap" class="p4ft02"><input type="radio" value="" name="opperation-authority">&#160;&#160;&#160;&#160;&#160;&#160;
                 Yes, at No. <input type="text" name="interstate-operating-authority" value="{{ .company.MCNum }}">&#160;</p>
             <p style="position:absolute;top:857px;left:97px;white-space:nowrap" class="p4ft00">&#160;</p>
             <p style="position:absolute;top:871px;left:97px;white-space:nowrap" class="p4ft07">&#160;<br />9.&#160;</p>
             <p style="position:absolute;top:894px;left:151px;white-space:nowrap" class="p4ft03"><b>What type of commodities do you intend to transport?</b>&#160; &#160;</p>
-            <p style="position:absolute;top:930px;left:151px;white-space:nowrap" class="p4ft03"><textarea name="name" rows="8" cols="82" style="resize:none"></textarea></p>
+            <p style="position:absolute;top:930px;left:151px;white-space:nowrap" class="p4ft03"><textarea name="commoditities" rows="8" cols="82" style="resize:none"></textarea></p>
             <p style="position:absolute;top:914px;left:97px;white-space:nowrap" class="p4ft02">&#160;</p>
             <p style="position:absolute;top:935px;left:159px;white-space:nowrap" class="p4ft08">&#160;<br />&#160;<br /><b>&#160;<br />&#160;</b></p>
             <p style="position:absolute;top:1020px;left:104px;white-space:nowrap" class="p4ft00">&#160;</p>
@@ -665,11 +666,11 @@
             <p style="position:absolute;top:110px;left:151px;white-space:nowrap" class="p4ft01"><input type="text" value="{{ .company.PhysicalAddress.Street }}" style="width:650px" name="physical-address-street"></p>
             <p style="position:absolute;top:161px;left:151px;white-space:nowrap" class="p4ft01"><input type="text" value="{{ .company.PhysicalAddress.City }}, {{ .company.PhysicalAddress.State }} {{ .company.PhysicalAddress.Zip }} " style="width:650px" name="physical-address-city-state-zip"></p>
             <p style="position:absolute;top:213px;left:151px;white-space:nowrap" class="p4ft01"><input type="text" value="{{ .company.Phone }}" style="width:245px" name="telephone-number"></p>
-            <p style="position:absolute;top:213px;left:510px;white-space:nowrap" class="p4ft01"><input type="text" name="name" value="" style="width:265px"></p>
+            <p style="position:absolute;top:213px;left:510px;white-space:nowrap" class="p4ft01"><input type="text" value="" style="width:265px" name="physical-address-county"></p>
             <p style="position:absolute;top:394px;left:151px;white-space:nowrap" class="p4ft01"><input type="text" name="mailing-address-street" value="{{ .company.MailingAddress.Street }}" style="width:650px"></p>
             <p style="position:absolute;top:443px;left:151px;white-space:nowrap" class="p4ft01"><input type="text" value="{{ .company.MailingAddress.City }}, {{ .company.MailingAddress.State }} {{ .company.MailingAddress.Zip }} " style="width:650px" name="mailing-address-city-state-zip"></p>
-            <p style="position:absolute;top:618px;left:151px;white-space:nowrap" class="p4ft01"><input type="text" name="name" value="" style="width:650px"></p>
-            <p style="position:absolute;top:670px;left:151px;white-space:nowrap" class="p4ft01"><input type="text" name="name" value="" style="width:650px"></p>
+            <p style="position:absolute;top:618px;left:151px;white-space:nowrap" class="p4ft01"><input type="text" value="" style="width:650px" name="attorney-name"></p>
+            <p style="position:absolute;top:670px;left:151px;white-space:nowrap" class="p4ft01"><input type="text" name="attorney-address" value="" style="width:650px"></p>
         </div>
         <br>
         <div id="page5-div" style="position:relative;width:918px;height:1188px;margin:0 auto;background-color:#ffffff;">
@@ -692,9 +693,9 @@
             <p style="position:absolute;top:452px;left:97px;white-space:nowrap" class="p5ft08"><b>&#160;<br />Verification of Application&#160;</b></p>
             <p style="position:absolute;top:505px;left:97px;white-space:nowrap" class="p5ft07"><b>&#160;<br /></b>I/We hereby state that the statement(s) made in this application is/are true and correct to&#160;<br />the best of my/our knowledge and belief. &#160;<br />&#160;<br />The undersigned understands that false statements herein
                 are made subject to the&#160;<br />penalties of 18 Pa. C.S. Section 4904 relating&#160;to unsworn falsification to authorities.</p>
-            <p style="position:absolute;top:685px;left:97px;white-space:nowrap" class="p5ft05"><input type="text" name="name" value="" style="width:500px"></p>
-            <p style="position:absolute;top:770px;left:610px;white-space:nowrap" class="p5ft05"><input type="text" name="name" value="" style="width:200px"></p>
-            <p style="position:absolute;top:770px;left:97px;white-space:nowrap" class="p5ft05"><input type="text" name="name" value="" style="width:500px"></p>
+            <p style="position:absolute;top:685px;left:97px;white-space:nowrap" class="p5ft05"><input type="text" name="signature-name" value="" style="width:500px"></p>
+            <p style="position:absolute;top:770px;left:610px;white-space:nowrap" class="p5ft05"><input type="text" name="signature-date" value="" style="width:200px"></p>
+            <p style="position:absolute;top:770px;left:97px;white-space:nowrap" class="p5ft05"><input type="text" name="signature" value="" style="width:500px"></p>
             <p style="position:absolute;top:711px;left:97px;white-space:nowrap" class="p5ft05">(Print Name)&#160;&#160;&#160;</p>
             <p style="position:absolute;top:792px;left:97px;white-space:nowrap" class="p5ft05">(Signature) &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;</p>
             <p style="position:absolute;top:792px;left:313px;white-space:nowrap" class="p5ft05">&#160;</p>
